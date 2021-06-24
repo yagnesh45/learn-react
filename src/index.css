@@ -15,6 +15,7 @@ body {
   max-width: 1000px;
   display: grid;
   gap: 2em;
+  align-items: start;
 }
 
 .author {
@@ -39,4 +40,14 @@ body {
   .book-section {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+.book-button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgb(90, 165, 90);
+  color: rgb(18, 156, 18);
+  outline: none;
+  background-color: rgb(211, 248, 211);
+  border-radius: 0.5rem;
 }

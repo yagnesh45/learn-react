@@ -37,17 +37,27 @@ const Description = () => { // Explicit returning of component
   );
 }
 
+const arrayOfNames = ['Yagnesh', 'Patil', 'is', 'always', 'here'];
+const newNames = arrayOfNames.map((name) => {
+  return (
+    <h1>{name}</h1>
+  );
+})
+
 
 function ParentComponent() {
-  let jsVar = 56;
+  // let jsVar = 56;
   return (
     <div>
       {/*  Reusing the components */}
       <PersonHeading />
       <Description />
-      {jsVar + jsVar} {/* Using curly braces we can use javascript code 
+      {/* {jsVar + jsVar} {/* Using curly braces we can use javascript code }
       inside JSX, that means we can use expression and variables
       in JSX using curly braces. */}
+
+      {/* example of Array's map() function */}
+      {newNames}
     </div>
   );
 }
