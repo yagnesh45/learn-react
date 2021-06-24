@@ -1,0 +1,42 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f1f3f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.book-section {
+  margin: 5rem auto;
+  width: 90vw;
+  max-width: 1000px;
+  display: grid;
+  gap: 2em;
+}
+
+.author {
+  color: lightseagreen;
+}
+
+.book-component {
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.book-name {
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 767px) {
+  .book-section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
